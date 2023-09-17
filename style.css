@@ -80,6 +80,7 @@ body {
 
 .wrapper label:hover{
   background-color:black;
+  border:none;
 }
 
 
@@ -144,13 +145,18 @@ body {
 
 .slides p {
     display: block;
-
+position: absolute;
     font-size: 2rem;
     text-align: start;
     color: #b07c7c;
     margin-top: 300px;
-    z-index: 90;
+    z-index: 90; 
+   
+   
     @media (max-width: 480px) {
         margin-top: 150px;
     }
+}
+.slides p:hover{
+    transform: translateY(-5.1rem);
 }
